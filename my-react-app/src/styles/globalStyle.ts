@@ -17,5 +17,15 @@ export const GlobalStyle = createGlobalStyle`
 
         --blue-dark: #050375;
         --blue-mid: #2231CF;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        width: 100vw;
+
+        background-color: #050375;
+        color: white;
     }
 `;

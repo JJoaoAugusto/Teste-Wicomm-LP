@@ -7,24 +7,26 @@ export const AboutSection = () => {
       <figure className="container-banner">
         <img src={BannerFullDeskCongresso} alt="" />
       </figure>
-      <div className="container-info-date">
-        <p>Em Abril de 2025</p>
-      </div>
-      <article className="container-info-content">
-        <div className="container-info-date-secondary">
-          <p>10, 11 e 12 de abril</p>
+      <article className="container-content">
+        <div className="container-content-title">
+          <p>EM ABRIL DE 2025</p>
+          <p>RESERVE SUA AGENDA</p>
         </div>
-        <div className="container-info-content--primary">
+        <div className="container-content--info">
+          <div>
+            <p>10, 11 e 12 de Abril</p>
+            <p>São Paulo/SP</p>
+          </div>
           <p>CONGRESSO INTERNACIONAL HUNTINGTON DE MEDICINA REPRODUTIVA</p>
+          <div>
+            <p>10 de abril</p>
+            <p>
+              Business class "inovação e valor para gestores de saúde". Saiba
+              mais abaixo
+            </p>
+          </div>
+          <button>INSCREVA-SE</button>
         </div>
-        <div className="container-info-content--secondary">
-          <p>10 de abril</p>
-          <p>
-            Business class "inovação e valor para gestores de saúde". Saiba mais
-            abaixo
-          </p>
-        </div>
-        <button>INSCREVA-SE</button>
       </article>
     </Section>
   );

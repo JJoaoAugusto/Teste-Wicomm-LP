@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
   background-color: var(--blue-dark);
   color: var(--white);
 
-  > nav {
+  .container-menu {
     width: 100%;
     height: 45px;
 
@@ -21,12 +21,12 @@ export const StyledHeader = styled.header`
     align-items: center;
   }
 
-  nav > img {
+  .container-menu--logo {
     height: 45px;
     width: 170px;
   }
 
-  nav > ul {
+  .container-menu--list {
     width: 100%;
     height: 100%;
     gap: 32px;
@@ -37,14 +37,14 @@ export const StyledHeader = styled.header`
     align-items: center;
   }
 
-  nav > div {
+  .container-menu--functionality {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  nav > div > button {
+  .container-menu--functionality > button {
     width: 140px;
     height: 45px;
 
@@ -52,7 +52,7 @@ export const StyledHeader = styled.header`
     color: var(--white);
   }
 
-  nav > div > div {
+  .container-menu--functionality > fieldset {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,7 +62,7 @@ export const StyledHeader = styled.header`
     height: 45px;
   }
 
-  nav > div > div > select {
+  .container-menu--functionality > fieldset > select {
     background-color: var(--blue-dark);
     color: var(--white);
     border: none;

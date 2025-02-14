@@ -4,9 +4,13 @@ import { StyledHeader } from "./style";
 export const Header = () => {
   return (
     <StyledHeader>
-      <nav>
-        <img src={LogoHuntington2024HorizBranco1} alt="" />
-        <ul>
+      <nav className="container-menu">
+        <img
+          src={LogoHuntington2024HorizBranco1}
+          alt=""
+          className="container-menu--logo"
+        />
+        <ul className="container-menu--list">
           <li>
             <p>Sobre</p>
           </li>
@@ -26,14 +30,14 @@ export const Header = () => {
             <p>FAQ</p>
           </li>
         </ul>
-        <div>
+        <div className="container-menu--functionality">
           <button>INSCREVA-SE</button>
-          <div>
+          <fieldset>
             <select name="" id="">
               <option value="">PT</option>
               <option value="">EN</option>
             </select>
-          </div>
+          </fieldset>
         </div>
       </nav>
     </StyledHeader>

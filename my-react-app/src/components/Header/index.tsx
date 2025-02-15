@@ -3,39 +3,56 @@ import { StyledHeader } from "./style";
 
 export const Header = () => {
   return (
-    <StyledHeader>
-      <nav className="container-menu">
+    <StyledHeader className="header">
+      <nav className="header__nav">
         <img
           src={LogoHuntington2024HorizBranco1}
-          alt=""
-          className="container-menu--logo"
+          alt="Logo do Congresso Huntington de Medicina Reprodutiva"
+          className="header__logo"
         />
-        <ul className="container-menu--list">
-          <li>
-            <p>Sobre</p>
+        <ul className="header__menu">
+          <li className="header__menu-item">
+            <a href="#sobre" className="header__menu-link">
+              Sobre
+            </a>
           </li>
-          <li>
-            <p>Speakers</p>
+          <li className="header__menu-item">
+            <a href="#speakers" className="header__menu-link">
+              Speakers
+            </a>
           </li>
-          <li>
-            <p>Agemda Científica</p>
+          <li className="header__menu-item">
+            <a href="#agenda" className="header__menu-link">
+              Agenda Científica
+            </a>
           </li>
-          <li>
-            <p>Comissão Científica</p>
+          <li className="header__menu-item">
+            <a href="#comissao" className="header__menu-link">
+              Comissão Científica
+            </a>
           </li>
-          <li>
-            <p>Patrocinadores</p>
+          <li className="header__menu-item">
+            <a href="#patrocinadores" className="header__menu-link">
+              Patrocinadores
+            </a>
           </li>
-          <li>
-            <p>FAQ</p>
+          <li className="header__menu-item">
+            <a href="#faq" className="header__menu-link">
+              FAQ
+            </a>
           </li>
         </ul>
-        <div className="container-menu--functionality">
-          <button>INSCREVA-SE</button>
-          <fieldset>
-            <select name="" id="">
-              <option value="">PT</option>
-              <option value="">EN</option>
+        <div className="header__actions">
+          <button
+            className="header__button"
+            aria-label="Inscreva-se no congresso"
+          >
+            INSCREVA-SE
+          </button>
+          <fieldset className="header__language">
+            <select className="header__language-select">
+              <option value="pt">PT</option>
+              <option value="en">EN</option>
             </select>
           </fieldset>
         </div>

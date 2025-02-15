@@ -3,20 +3,20 @@ import { AddressSection } from "./AddressSection";
 import { ComissionSection } from "./ComissionSection";
 import { FaqSection } from "./FaqSection";
 import { ScheduleSection } from "./ScheduleSection";
-import { SpeakerSection } from "./SpeakerSection";
-import { SponsorSection } from "./SponsorSection";
+import { SpeakersSection } from "./SpeakersSection";
+import { SponsorsSection } from "./SponsorSection";
 import { StyledMain } from "./style";
 
 export const Main = () => {
   return (
     <StyledMain>
       <AboutSection />
-      <SpeakerSection />
+      <SpeakersSection />
       <ScheduleSection />
       <ComissionSection />
       <FaqSection />
       <AddressSection />
-      <SponsorSection />
+      <SponsorsSection />
     </StyledMain>
   );
 };

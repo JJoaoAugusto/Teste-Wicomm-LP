@@ -9,7 +9,7 @@ export const StyledSection = styled.section`
   width: 100%;
   max-width: 1200px;
 
-  .container-FAQ {
+  .faq {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,10 @@ export const StyledSection = styled.section`
     gap: 64px;
   }
 
-  .container-FAQ--list {
+  .faq__title {
+  }
+
+  .faq__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,25 +32,31 @@ export const StyledSection = styled.section`
     gap: 64px;
   }
 
-  .FAQ-list--card {
+  .faq__card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     width: 100%;
-
-    button {
-      color: white;
-    }
   }
 
-  .card--content {
+  .faq__card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 
     gap: 16px;
+  }
+
+  .faq__card-question {
+  }
+
+  .faq__card-answer {
+  }
+
+  .faq__card-button {
+    color: white;
   }
 `;

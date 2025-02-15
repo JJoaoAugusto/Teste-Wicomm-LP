@@ -9,7 +9,7 @@ export const StyledSection = styled.section`
   width: 100%;
   max-width: 1200px;
 
-  .container-content {
+  .schedule {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +18,29 @@ export const StyledSection = styled.section`
     width: 100%;
   }
 
-  .info-box {
+  .schedule__banner {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .schedule__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    width: 100%;
+    gap: 32px;
+  }
+
+  .schedule__info-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +49,16 @@ export const StyledSection = styled.section`
     gap: 16px;
   }
 
-  .container-timer {
+  .schedule__info-title {
+  }
+
+  .schedule__info-text {
+  }
+
+  .schedule__info-button {
+  }
+
+  .schedule__timer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,31 +67,31 @@ export const StyledSection = styled.section`
     width: 100%;
   }
 
-  .container-timer--info {
+  .schedule__timer-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     gap: 64px;
-
-    li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      width: 140px;
-      height: 140px;
-
-      background-color: var(--white);
-      color: var(--black);
-
-      border-radius: 100%;
-    }
   }
 
-  .container-plan {
+  .schedule__timer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    height: 140px;
+
+    background-color: var(--white);
+    color: var(--black);
+
+    border-radius: 100%;
+  }
+
+  .schedule__plan {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +101,7 @@ export const StyledSection = styled.section`
     gap: 32px;
   }
 
-  .container-plan--info {
+  .schedule__plan-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +111,25 @@ export const StyledSection = styled.section`
     gap: 32px;
   }
 
-  .container-plan--list {
+  .schedule__plan-title {
+  }
+
+  .schedule__plan-text {
+  }
+
+  .schedule__plan-language {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .schedule__plan-label {
+  }
+
+  .schedule__plan-select {
+  }
+
+  .schedule__plan-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,19 +137,25 @@ export const StyledSection = styled.section`
 
     width: 100%;
     gap: 32px;
-
-    li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      width: 100%;
-      max-width: 312px;
-    }
   }
 
-  .container-plan--about {
+  .schedule__plan-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 312px;
+  }
+
+  .schedule__plan-item-title {
+  }
+
+  .schedule__plan-item-date {
+  }
+
+  .schedule__plan-about {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -109,7 +164,10 @@ export const StyledSection = styled.section`
     width: 100%;
   }
 
-  .container-plan--content {
+  .schedule__plan-about-text {
+  }
+
+  .schedule__plan-content {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -120,7 +178,7 @@ export const StyledSection = styled.section`
     gap: 32px;
   }
 
-  .content-title {
+  .schedule__content-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +190,13 @@ export const StyledSection = styled.section`
     background-color: white;
   }
 
-  .container-content-list {
+  .schedule__content-title-text {
+  }
+
+  .schedule__content-title-subtext {
+  }
+
+  .schedule__content-list {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -142,7 +206,7 @@ export const StyledSection = styled.section`
     gap: 16px;
   }
 
-  .content-list-card {
+  .schedule__content-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -152,7 +216,7 @@ export const StyledSection = styled.section`
     gap: 128px;
   }
 
-  .card-date {
+  .schedule__card-date {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,7 +227,13 @@ export const StyledSection = styled.section`
     gap: 8px;
   }
 
-  .card-content {
+  .schedule__card-date-day {
+  }
+
+  .schedule__card-date-event {
+  }
+
+  .schedule__card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,5 +241,11 @@ export const StyledSection = styled.section`
 
     width: 100%;
     gap: 12px;
+  }
+
+  .schedule__card-content-speaker {
+  }
+
+  .schedule__card-content-role {
   }
 `;

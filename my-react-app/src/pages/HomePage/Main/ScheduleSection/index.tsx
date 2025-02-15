@@ -1,171 +1,184 @@
-import BannerFullDeskCongresso from "../../../assets/BannerFullDeskCongresso.svg";
+import BannerFullDeskCongresso from "../../../../assets/BannerFullDeskCongresso.svg";
 import { StyledSection } from "./style";
 
 export const ScheduleSection = () => {
   return (
     <StyledSection>
-      <article className="container-questions">
-        <figure className="container-questions--banner">
-          <img src={BannerFullDeskCongresso} alt="" />
+      <article className="schedule">
+        <figure className="schedule__banner">
+          <img src={BannerFullDeskCongresso} alt="Banner do Congresso" />
         </figure>
-        <div className="container-questions--info">
-          <div className="info-box">
-            <p>QUANDO?</p>
-            <p>
+        <div className="schedule__info">
+          <div className="schedule__info-box">
+            <p className="schedule__info-title">QUANDO?</p>
+            <p className="schedule__info-text">
               O Congresso Huntington acontece nos dias 11 e 12 de abril de 2025.
               No dia 10, acontece a novidade desta edição: a Business Class,
-              "inovação e e valor para gestores de saúde".
+              "inovação e valor para gestores de saúde".
             </p>
           </div>
-          <div>
-            <p>ONDE?</p>
-            <p>
-              No hotel Tivoli Mofarrej, especialistas de varios países trazem os
+          <div className="schedule__info-box">
+            <p className="schedule__info-title">ONDE?</p>
+            <p className="schedule__info-text">
+              No hotel Tivoli Mofarrej, especialistas de vários países trazem os
               avanços, as novidades e o futuro da reprodução assistida.
             </p>
           </div>
-          <button>VEJA COMO CHEGAR</button>
+          <button className="schedule__info-button">VEJA COMO CHEGAR</button>
         </div>
       </article>
-      <article className="container-timer">
-        <ul className="container-timer--info">
-          <li>245 DIAS</li>
-          <li>00 HORAS</li>
-          <li>25 MIN</li>
-          <li>05 SEG</li>
+
+      <article className="schedule__timer">
+        <ul className="schedule__timer-list">
+          <li className="schedule__timer-item">245 DIAS</li>
+          <li className="schedule__timer-item">00 HORAS</li>
+          <li className="schedule__timer-item">25 MIN</li>
+          <li className="schedule__timer-item">05 SEG</li>
         </ul>
       </article>
-      <article className="container-plan">
-        <div className="container-plan--info">
-          <p>PROGRAMAÇÃO</p>
-          <fieldset>
-            <label htmlFor="">SELECIONE O IDIOMA</label>
-            <select name="" id="">
-              <option value="">PT</option>
-              <option value="">EN</option>
+
+      <article className="schedule__plan">
+        <div className="schedule__plan-info">
+          <p className="schedule__plan-title">PROGRAMAÇÃO</p>
+          <fieldset className="schedule__plan-language">
+            <select
+              name="language"
+              id="language"
+              className="schedule__plan-select"
+            >
+              <option value="pt">PT</option>
+              <option value="en">EN</option>
             </select>
           </fieldset>
-          <p>As agendas estão distribuidas por dia, horário e ambientes.</p>
-          <p>
+          <p className="schedule__plan-text">
+            As agendas estão distribuídas por dia, horário e ambientes.
+          </p>
+          <p className="schedule__plan-text">
             **Alterações de grade referentes aos speakers e horário podem
             ocorrer sem aviso prévio.
           </p>
         </div>
-        <ul className="container-plan--list">
-          <li>
-            <p>BUSINESS CLASS</p>
-            <p>QUI 10 DE ABRIL</p>
+        <ul className="schedule__plan-list">
+          <li className="schedule__plan-item">
+            <p className="schedule__plan-item-title">BUSINESS CLASS</p>
+            <p className="schedule__plan-item-date">QUI 10 DE ABRIL</p>
           </li>
-          <li>
-            <p>CONGRESSO 1 DIA</p>
-            <p>SEX 11 DE ABRIL</p>
+          <li className="schedule__plan-item">
+            <p className="schedule__plan-item-title">CONGRESSO 1 DIA</p>
+            <p className="schedule__plan-item-date">SEX 11 DE ABRIL</p>
           </li>
-          <li>
-            <p>CONGRESSO 2 DIA</p>
-            <p>SÁB 12 De ABRIL</p>
+          <li className="schedule__plan-item">
+            <p className="schedule__plan-item-title">CONGRESSO 2 DIA</p>
+            <p className="schedule__plan-item-date">SÁB 12 DE ABRIL</p>
           </li>
         </ul>
-        <div className="container-plan--about">
-          <p>
+        <div className="schedule__plan-about">
+          <p className="schedule__plan-about-text">
             **No dia 10 haverá uma Business Class voltada a médicos e
-            profissionais de saúde que administram clinicas.
+            profissionais de saúde que administram clínicas.
           </p>
-          <p>
+          <p className="schedule__plan-about-text">
             Nos dias 11 e 12 de abril as palestras são abertas ao público,
             escolha suas palestras e garanta seu ingresso no Congresso.
           </p>
         </div>
-        <div className="container-plan--content">
-          <div className="content--title">
-            <p>SALA PRINCIPAl</p>
-            <p>Clique para ver a programação da sala principal</p>
+        <div className="schedule__plan-content">
+          <div className="schedule__content-title">
+            <p className="schedule__content-title-text">SALA PRINCIPAL</p>
+            <p className="schedule__content-title-subtext">
+              Clique para ver a programação da sala principal
+            </p>
           </div>
-          <ul className="container-content-list">
-            <li className="content-list-card">
-              <div className="card-date">
-                <p>10/04</p>
-                <p>ABERTURA</p>
+          <ul className="schedule__content-list">
+            <li className="schedule__content-card">
+              <div className="schedule__card-date">
+                <p className="schedule__card-date-day">10/04</p>
+                <p className="schedule__card-date-event">ABERTURA</p>
               </div>
-              <div className="card-content">
-                <p>Fabio Iwai e João Pedro Junqueira</p>
-                <p>CEO e Diretor Médico, Grupo Huntington</p>
-              </div>
-            </li>
-            <li className="content-list-card">
-              <div className="card-date">
-                <p>10/04</p>
-                <p>AULA 01</p>
-              </div>
-              <div className="card-content">
-                <p>
-                  Inovação e Exclusividade: Redefinindo a Jornada do Paciente
+              <div className="schedule__card-content">
+                <p className="schedule__card-content-speaker">
+                  Fabio Iwai e João Pedro Junqueira
                 </p>
-                <p>Claudia Cohn - Diretora de Negócios Nacionais, Dasa</p>
-              </div>
-            </li>
-            <li className="content-list-card">
-              <div className="card-date">
-                <p>10/04</p>
-                <p>AULA 02</p>
-              </div>
-              <div className="card-content">
-                <p>
-                  Marketing Digital de Alta Performance para Negócios de Saúde
-                </p>
-                <p>
-                  Gustavo Santana e Dib Naim Sekkar, Sócios Diretores da Wigoo
+                <p className="schedule__card-content-role">
+                  CEO e Diretor Médico, Grupo Huntington
                 </p>
               </div>
             </li>
-            <li className="content-list-card">
-              <div className="card-date">
-                <p>10/04</p>
-                <p>AULA 03</p>
+            <li className="schedule__content-card">
+              <div className="schedule__card-date">
+                <p className="schedule__card-date-day">10/04</p>
+                <p className="schedule__card-date-event">AULA 01</p>
               </div>
-              <div className="card-content">
-                <p>
-                  Dados que Transformam: Como a Análise Estratégica Impulsiona
-                  os Negócios
+              <div className="schedule__card-content">
+                <p className="schedule__card-content-speaker">Claudia Cohn</p>
+                <p className="schedule__card-content-role">
+                  Diretora de Negócios Nacionais, Dasa
                 </p>
-                <p>Daniel Marques - Data & Analytics Director; Natura </p>
               </div>
             </li>
-            <li className="content-list-card">
-              <div className="card-date">
-                <p>10/04</p>
-                <p>AULA 04</p>
+            <li className="schedule__content-card">
+              <div className="schedule__card-date">
+                <p className="schedule__card-date-day">10/04</p>
+                <p className="schedule__card-date-event">AULA 02</p>
               </div>
-              <div className="card-content">
-                <p>
-                  Gestão Estratégica na saúde: Como Planejar o Futuro do Seu
-                  Negócio
+              <div className="schedule__card-content">
+                <p className="schedule__card-content-speaker">
+                  Gustavo Santana e Dib Naim Sekkar
                 </p>
-                <p>Luís Fernando Vieira Joaquim - Sócio, Deloitte</p>
+                <p className="schedule__card-content-role">
+                  Sócios Diretores da Wigoo
+                </p>
               </div>
             </li>
-            <li className="content-list-card">
-              <div className="card-date">
-                <p>10/04</p>
-                <p>AULA 05</p>
+            <li className="schedule__content-card">
+              <div className="schedule__card-date">
+                <p className="schedule__card-date-day">10/04</p>
+                <p className="schedule__card-date-event">AULA 03</p>
               </div>
-              <div className="card-content">
-                <p>
-                  Além do Consultório: Por que o Médico do Futuro Também Precisa
-                  Pensar como Empresário
+              <div className="schedule__card-content">
+                <p className="schedule__card-content-speaker">Daniel Marques</p>
+                <p className="schedule__card-content-role">
+                  Data & Analytics Director, Natura
                 </p>
-                <p>Ricardo Salem Ribeiro - Diretor Executivo, Care Plus</p>
               </div>
             </li>
-            <li className="content-list-card">
-              <div className="card-date">
-                <p>10/04</p>
-                <p>ENCERRAMENTO</p>
+            <li className="schedule__content-card">
+              <div className="schedule__card-date">
+                <p className="schedule__card-date-day">10/04</p>
+                <p className="schedule__card-date-event">AULA 04</p>
               </div>
-              <div className="card-content">
-                <p>Fabio Iwai e João Pedro Junqueira</p>
-                <p>
-                  Dados que Transformam: Como a Análise Estratégica Impulsiona
-                  os Negócios
+              <div className="schedule__card-content">
+                <p className="schedule__card-content-speaker">
+                  Luís Fernando Vieira Joaquim
+                </p>
+                <p className="schedule__card-content-role">Sócio, Deloitte</p>
+              </div>
+            </li>
+            <li className="schedule__content-card">
+              <div className="schedule__card-date">
+                <p className="schedule__card-date-day">10/04</p>
+                <p className="schedule__card-date-event">AULA 05</p>
+              </div>
+              <div className="schedule__card-content">
+                <p className="schedule__card-content-speaker">
+                  Ricardo Salem Ribeiro
+                </p>
+                <p className="schedule__card-content-role">
+                  Diretor Executivo, Care Plus
+                </p>
+              </div>
+            </li>
+            <li className="schedule__content-card">
+              <div className="schedule__card-date">
+                <p className="schedule__card-date-day">10/04</p>
+                <p className="schedule__card-date-event">ENCERRAMENTO</p>
+              </div>
+              <div className="schedule__card-content">
+                <p className="schedule__card-content-speaker">
+                  Fabio Iwai e João Pedro Junqueira
+                </p>
+                <p className="schedule__card-content-role">
+                  CEO e Diretor Médico, Grupo Huntington
                 </p>
               </div>
             </li>

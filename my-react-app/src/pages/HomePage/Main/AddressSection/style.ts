@@ -9,7 +9,7 @@ export const StyledSection = styled.section`
   width: 100%;
   max-width: 1200px;
 
-  .container-address {
+  .address {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +18,7 @@ export const StyledSection = styled.section`
     width: 100%;
   }
 
-  .container-address--info {
+  .address__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,5 +26,20 @@ export const StyledSection = styled.section`
 
     width: 400px;
     gap: 16px;
+  }
+
+  .address__info-title {
+  }
+
+  .address__info-subtitle {
+  }
+
+  .address__info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .address__map {
   }
 `;

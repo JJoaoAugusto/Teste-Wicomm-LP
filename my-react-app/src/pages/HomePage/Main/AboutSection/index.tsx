@@ -1,31 +1,41 @@
-import BannerFullDeskCongresso from "../../../assets/BannerFullDeskCongresso.svg";
+import BannerFullDeskCongresso from "../../../../assets/BannerFullDeskCongresso.svg";
 import { StyledSection } from "./style";
 
 export const AboutSection = () => {
   return (
     <StyledSection>
-      <figure className="container-banner">
-        <img src={BannerFullDeskCongresso} alt="" />
+      <figure className="about__banner">
+        <img
+          src={BannerFullDeskCongresso}
+          alt="Banner do Congresso Huntington de Medicina Reprodutiva"
+        />
       </figure>
-      <article className="container-content">
-        <div className="container-content-title">
-          <p>EM ABRIL DE 2025</p>
-          <p>RESERVE SUA AGENDA</p>
+
+      <article className="about__content">
+        <div className="about__header">
+          <p className="about__header-text">EM ABRIL DE 2025</p>
+          <p className="about__header-text">RESERVE SUA AGENDA</p>
         </div>
-        <div className="container-content--info">
-          <div>
-            <p>10, 11 e 12 de Abril</p>
-            <p>São Paulo/SP</p>
+
+        <div className="about__info">
+          <div className="about__info-item">
+            <p className="about__info-text">10, 11 e 12 de Abril</p>
+            <p className="about__info-text">São Paulo/SP</p>
           </div>
-          <p>CONGRESSO INTERNACIONAL HUNTINGTON DE MEDICINA REPRODUTIVA</p>
-          <div>
-            <p>10 de abril</p>
-            <p>
+
+          <p className="about__description">
+            CONGRESSO INTERNACIONAL HUNTINGTON DE MEDICINA REPRODUTIVA
+          </p>
+
+          <div className="about__info-item">
+            <p className="about__info-text">10 de abril</p>
+            <p className="about__info-text">
               Business class "inovação e valor para gestores de saúde". Saiba
               mais abaixo
             </p>
           </div>
-          <button>INSCREVA-SE</button>
+
+          <button className="about__button">INSCREVA-SE</button>
         </div>
       </article>
     </StyledSection>

@@ -1,8 +1,8 @@
-import { Section } from "./style";
+import { StyledSection } from "./style";
 
 export const FaqSection = () => {
   return (
-    <Section>
+    <StyledSection>
       <article className="container-FAQ">
         <p>PERGUNTAS FREQUENTES</p>
         <ul className="container-FAQ--list">
@@ -39,6 +39,6 @@ export const FaqSection = () => {
           </li>
         </ul>
       </article>
-    </Section>
+    </StyledSection>
   );
 };

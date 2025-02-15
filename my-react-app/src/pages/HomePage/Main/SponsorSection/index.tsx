@@ -14,11 +14,11 @@ import LogoUCB from "../../../assets/LogoUcb.svg";
 import LogoVitrolife from "../../../assets/LogoVitrolife.svg";
 import LogoSBRH from "../../../assets/LogoSBRH.svg";
 import LogoSBRA from "../../../assets/LogoSBRA.svg";
-import { Section } from "./style";
+import { StyledSection } from "./style";
 
 export const SponsorSection = () => {
   return (
-    <Section>
+    <StyledSection>
       <article className="container-sponsor">
         <p>Realização</p>
         <div>
@@ -113,6 +113,6 @@ export const SponsorSection = () => {
           </div>
         </article>
       </div>
-    </Section>
+    </StyledSection>
   );
 };

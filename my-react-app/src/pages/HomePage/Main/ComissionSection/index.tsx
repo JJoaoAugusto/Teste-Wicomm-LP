@@ -1,8 +1,8 @@
-import { Section } from "./style";
+import { StyledSection } from "./style";
 
 export const ComissionSection = () => {
   return (
-    <Section>
+    <StyledSection>
       <article className="container-comitte--organizing">
         <p>COMISSÃO ORGANIZADORA</p>
         <ul className="container-comitte-organizing--list">
@@ -146,6 +146,6 @@ export const ComissionSection = () => {
           </li>
         </ul>
       </article>
-    </Section>
+    </StyledSection>
   );
 };

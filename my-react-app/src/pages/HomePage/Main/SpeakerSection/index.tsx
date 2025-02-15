@@ -1,8 +1,8 @@
-import { Section } from "./style";
+import { StyledSection } from "./style";
 
 export const SpeakerSection = () => {
   return (
-    <Section>
+    <StyledSection>
       <article className="container-apresentation">
         <div className="container-apresentation--title">
           <img src="" alt="" />
@@ -71,6 +71,6 @@ export const SpeakerSection = () => {
           <p>Imagens do evento realizado em 2023</p>
         </figure>
       </article>
-    </Section>
+    </StyledSection>
   );
 };

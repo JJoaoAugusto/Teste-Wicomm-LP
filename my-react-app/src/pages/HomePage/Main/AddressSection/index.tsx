@@ -1,8 +1,8 @@
-import { Section } from "./style";
+import { StyledSection } from "./style";
 
 export const AddressSection = () => {
   return (
-    <Section>
+    <StyledSection>
       <article className="container-address">
         <div className="container-address--info">
           <p>COMO CHEGAR</p>
@@ -17,6 +17,6 @@ export const AddressSection = () => {
           <p>Aqui estará o mapa</p>
         </div>
       </article>
-    </Section>
+    </StyledSection>
   );
 };

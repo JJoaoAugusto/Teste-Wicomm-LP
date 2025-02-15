@@ -1,9 +1,9 @@
 import BannerFullDeskCongresso from "../../../assets/BannerFullDeskCongresso.svg";
-import { Section } from "./style";
+import { StyledSection } from "./style";
 
 export const AboutSection = () => {
   return (
-    <Section>
+    <StyledSection>
       <figure className="container-banner">
         <img src={BannerFullDeskCongresso} alt="" />
       </figure>
@@ -28,6 +28,6 @@ export const AboutSection = () => {
           <button>INSCREVA-SE</button>
         </div>
       </article>
-    </Section>
+    </StyledSection>
   );
 };

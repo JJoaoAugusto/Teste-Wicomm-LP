@@ -1,6 +1,6 @@
 import { Section } from "./style";
 
-export const AddressSecrion = () => {
+export const AddressSection = () => {
   return (
     <Section>
       <article className="container-address">

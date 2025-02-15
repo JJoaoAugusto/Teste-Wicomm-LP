@@ -1,7 +1,7 @@
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { AboutSection } from "./AboutSection";
-import { AddressSecrion } from "./AddressSection";
+import { AddressSection } from "./AddressSection";
 import { ComissionSection } from "./ComissionSection";
 import { FaqSection } from "./FaqSection";
 import { ScheduleSection } from "./ScheduleSection";
@@ -17,7 +17,7 @@ export const HomePage = () => {
       <ScheduleSection />
       <ComissionSection />
       <FaqSection />
-      <AddressSecrion />
+      <AddressSection />
       <SponsorSection />
       <Footer />
     </>

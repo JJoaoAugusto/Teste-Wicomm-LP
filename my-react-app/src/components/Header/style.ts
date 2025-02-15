@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  width: 100%;
-  height: 70px;
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  background-color: var(--blue-dark);
-  color: var(--white);
+  width: 100%;
+  height: 70px;
 
+  background-color: var(--blue-dark);
   .container-menu {
     width: 100%;
     height: 45px;

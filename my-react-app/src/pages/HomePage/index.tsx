@@ -1,3 +1,4 @@
+import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { AboutSection } from "./AboutSection";
 import { AddressSecrion } from "./AddressSection";
@@ -18,6 +19,7 @@ export const HomePage = () => {
       <FaqSection />
       <AddressSecrion />
       <SponsorSection />
+      <Footer />
     </>
   );
 };

@@ -5,6 +5,7 @@ import { ComissionSection } from "./ComissionSection";
 import { FaqSection } from "./FaqSection";
 import { ScheduleSection } from "./ScheduleSection";
 import { SpeakerSection } from "./SpeakerSection";
+import { SponsorSection } from "./SponsorSection";
 
 export const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ export const HomePage = () => {
       <ComissionSection />
       <FaqSection />
       <AddressSecrion />
+      <SponsorSection />
     </>
   );
 };

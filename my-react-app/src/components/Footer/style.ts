@@ -7,7 +7,7 @@ export const StyledFooter = styled.footer`
   align-items: center;
   width: 100%;
   height: 190px;
-  margin-top: 256px;
+  padding-top: 64px;
 
   background-color: var(--blue-dark);
   color: var(--white);

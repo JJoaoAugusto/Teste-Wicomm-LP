@@ -4,10 +4,11 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
   width: 100%;
   max-width: 1200px;
+  padding: 120px 0px;
 
   .address {
     display: flex;
@@ -24,20 +25,25 @@ export const StyledSection = styled.section`
     justify-content: center;
     align-items: start;
 
-    width: 400px;
-    gap: 16px;
+    width: 100%;
+    gap: 56px;
+    padding: 32px 0px;
+
+    border-bottom: 4px solid var(--white);
   }
 
   .address__info-title {
   }
 
   .address__info-subtitle {
+    padding-bottom: 16px;
   }
 
   .address__info-details {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+
+    gap: 4px;
   }
 
   .address__map {

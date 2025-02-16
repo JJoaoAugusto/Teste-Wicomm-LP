@@ -1,21 +1,24 @@
 import { StyledSection } from "./style";
+import MapIMG from "../../../../assets/MapIMG.svg";
 
 export const AddressSection = () => {
   return (
     <StyledSection>
       <article className="address">
         <div className="address__info">
-          <p className="address__info-title">COMO CHEGAR</p>
-          <p className="address__info-subtitle">ENDEREÇO</p>
+          <p className="address__info-title title__3">COMO CHEGAR</p>
           <div className="address__info-details">
-            <p>Hotel Tivoli Mofarrej</p>
-            <p>São Paulo/SP - Brasil</p>
-            <p>Alameda Santos, 1437 - Cerqueira César, São Paulo</p>
+            <p className="address__info-subtitle title__4">ENDEREÇO:</p>
+            <p className="text__2">Hotel Tivoli Mofarrej</p>
+            <p className="text__2">São Paulo/SP - Brasil</p>
+            <p className="text__2">
+              Alameda Santos, 1437 - Cerqueira César, São Paulo
+            </p>
           </div>
         </div>
-        <div className="address__map">
-          <p>Aqui estará o mapa</p>
-        </div>
+        <figure className="address__map">
+          <img src={MapIMG} alt="Imagem do mapa do local do evento" />
+        </figure>
       </article>
     </StyledSection>
   );

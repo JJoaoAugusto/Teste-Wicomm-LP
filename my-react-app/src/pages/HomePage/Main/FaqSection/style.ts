@@ -7,7 +7,8 @@ export const StyledSection = styled.section`
   align-items: center;
 
   width: 100%;
-  max-width: 1200px;
+  padding: 80px 0px;
+  background-color: var(--blue-mid);
 
   .faq {
     display: flex;
@@ -16,7 +17,9 @@ export const StyledSection = styled.section`
     align-items: center;
 
     width: 100%;
-    gap: 64px;
+    max-width: 900px;
+
+    gap: 40px;
   }
 
   .faq__title {
@@ -29,7 +32,7 @@ export const StyledSection = styled.section`
     align-items: center;
 
     width: 100%;
-    gap: 64px;
+    gap: 16px;
   }
 
   .faq__card {
@@ -39,6 +42,11 @@ export const StyledSection = styled.section`
     align-items: center;
 
     width: 100%;
+    height: 100px;
+    padding: 32px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--white);
   }
 
   .faq__card-content {

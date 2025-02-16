@@ -83,8 +83,8 @@ export const StyledSection = styled.section`
 
     background: linear-gradient(
       to bottom,
-      rgba(11, 240, 202, 0.5),
-      rgba(176, 78, 225, 0.5)
+      rgba(11, 240, 202, 0.3),
+      rgba(176, 78, 225, 0.3)
     );
 
     border: var(--white) 0.75px solid;

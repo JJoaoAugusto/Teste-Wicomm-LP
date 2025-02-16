@@ -7,7 +7,7 @@ export const StyledSection = styled.section`
   align-items: center;
 
   width: 100%;
-  padding: 32px 0px;
+  padding-top: 32px;
   gap: 32px;
   background-color: var(--blue-mid);
 
@@ -54,10 +54,10 @@ export const StyledSection = styled.section`
     width: 100%;
     max-width: 1200px;
     padding: 64px 0px;
+    gap: 64px;
   }
 
   .speakers__content-title {
-    font-weight: bold;
   }
 
   .speakers__content-list {
@@ -67,20 +67,56 @@ export const StyledSection = styled.section`
     align-items: center;
 
     gap: 16px;
+
+    overflow-x: scroll;
   }
 
   .speakers__content-item {
-    width: 200px;
-    height: 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    border: solid black;
+    width: 205px;
+    height: 265px;
+    gap: 8px;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(11, 240, 202, 0.5),
+      rgba(176, 78, 225, 0.5)
+    );
+
+    border: var(--white) 0.75px solid;
+    border-radius: 12px;
   }
 
   .speakers__content-button {
-    margin-top: 16px;
+    width: 205px;
+    height: 45px;
+
+    background-color: var(--blue-congresso);
+    color: var(--white);
+
+    border: none;
+    font-weight: bold;
+
+    cursor: pointer;
   }
 
   .speakers__event {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 96px 0px;
+
+    background-color: var(--blue-dark);
+  }
+
+  .speakers__event-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -94,10 +130,11 @@ export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
 
     width: 100%;
     max-width: 500px;
+    gap: 32px;
   }
 
   .speakers__event-about-title {
@@ -109,10 +146,9 @@ export const StyledSection = styled.section`
   }
 
   .speakers__event-about-stats {
-    font-weight: bold;
   }
 
-  .speakers__event-informations {
+  .speakers__event-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,11 +157,14 @@ export const StyledSection = styled.section`
     width: 100%;
   }
 
-  .speakers__event-info {
+  .speakers__event-info-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+
+    padding: 16px;
+    border-left: 0.75px solid var(--white);
   }
 
   .speakers__event-images {
@@ -133,5 +172,16 @@ export const StyledSection = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 550px;
+    height: 550px;
+    gap: 16px;
+
+    overflow-x: scroll;
+
+    img {
+      width: 450px;
+      height: 450px;
+    }
   }
 `;

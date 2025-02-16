@@ -17,7 +17,7 @@ export const SpeakersSection = () => {
       </article>
 
       <article className="speakers__content">
-        <h1 className="speakers__content-title title__two">
+        <h1 className="speakers__content-title title__2">
           SPEAKERS <span>INTERNACIONAIS CONFIRMADOS</span>
         </h1>
         <ul className="speakers__content-list">
@@ -29,8 +29,8 @@ export const SpeakersSection = () => {
                   src={EduardoLeme}
                   alt="Foto de perfil do speaker Eduardo Leme"
                 />
-                <p className="text__for">Eduardo Leme Alves da Mota</p>
-                <p className="text__for">+ SAIBA MAIS</p>
+                <p className="text__4">Eduardo Leme Alves da Mota</p>
+                <p className="text__4">+ SAIBA MAIS</p>
               </li>
             ))}
         </ul>
@@ -40,26 +40,26 @@ export const SpeakersSection = () => {
       <article className="speakers__event">
         <div className="speakers__event-container">
           <div className="speakers__event-about">
-            <h1 className="speakers__event-about-title title__two">
+            <h1 className="speakers__event-about-title title__2">
               O FUTURO DA MEDICINA REPRODUTIVA PASSA AQUI
             </h1>
-            <p className="speakers__event-about-description text__one">
+            <p className="speakers__event-about-description text__1">
               Nos dias 11 e 12 de Abril de 2025, grandes especialistas do mundo
               todo se reúnem novamente no Hotel Tivoli Mofarrej, em São Paulo,
               para apresentar as últimas novidades em reprodução assistida.
             </p>
-            <p className="speakers__event-about-stats text__two">
+            <p className="speakers__event-about-stats text__2">
               Nas últimas 5 edições tivemos mais de:
             </p>
             <div className="speakers__event-info">
               <div className="speakers__event-info-item">
-                <h1 className="title__one">50</h1>
-                <p className="text__two">palestrantes</p>
-                <p className="text__two">internacionais</p>
+                <h1 className="title__1">50</h1>
+                <p className="text__2">palestrantes</p>
+                <p className="text__2">internacionais</p>
               </div>
               <div className="speakers__event-info-item">
-                <h1 className="title__one">3.500</h1>
-                <p className="text__two">participantes</p>
+                <h1 className="title__1">3.500</h1>
+                <p className="text__2">participantes</p>
                 <p>inscritos</p>
               </div>
             </div>

@@ -4,7 +4,7 @@ export const ComissionSection = () => {
   return (
     <StyledSection>
       <article className="commission">
-        <p className="commission__title">COMISSÃO ORGANIZADORA</p>
+        <p className="commission__title title__4">COMISSÃO ORGANIZADORA</p>
         <ul className="commission__organizing-list">
           <li className="commission__card">
             <img src="" alt="" />

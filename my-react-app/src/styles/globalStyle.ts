@@ -29,42 +29,42 @@ export const GlobalStyle = createGlobalStyle`
 
         width: 100vw;
 
-        .title__one {
+        .title__1 {
             font-size: 40px;
             font-weight: 900px;
         }
 
-        .title__two {
+        .title__2 {
             font-size: 36px;
             font-weight: 700px;
         }
 
-        .title__tree {
+        .title__3 {
             font-size: 32px;
             font-weight: 400px;
         }
 
-        .title__for {
+        .title__4 {
             font-size: 28px;
             font-weight: 300px;
         }
 
-        .text__one {
+        .text__1 {
             font-size: 21px;
             font-weight: 900px;
         }
 
-        .text__two {
+        .text__2 {
             font-size: 18px;
             font-weight: 700px;
         }
 
-        .text__tree {
+        .text__3 {
             font-size: 16px;
             font-weight: 400px;
         }
 
-        .text__for {
+        .text__4 {
             font-size: 12px;
             font-weight: 300px;
         }

@@ -12,8 +12,8 @@ export const AboutSection = () => {
     >
       <article className="about__content">
         <div className="about__header">
-          <h2 className="about__header-text title__two">EM ABRIL DE 2025</h2>
-          <h2 className="about__header-text title__two">RESERVE SUA AGENDA</h2>
+          <h2 className="about__header-text title__2">EM ABRIL DE 2025</h2>
+          <h2 className="about__header-text title__2">RESERVE SUA AGENDA</h2>
         </div>
 
         <div className="about__info">
@@ -21,10 +21,10 @@ export const AboutSection = () => {
             <h2 className="about__info-text title__tree">
               10, 11 e 12 de Abril
             </h2>
-            <h4 className="about__info-text title__for">São Paulo/SP</h4>
+            <h4 className="about__info-text title__4">São Paulo/SP</h4>
           </div>
 
-          <h2 className="about__description  title__two">
+          <h2 className="about__description  title__2">
             CONGRESSO INTERNACIONAL HUNTINGTON DE MEDICINA REPRODUTIVA
           </h2>
 

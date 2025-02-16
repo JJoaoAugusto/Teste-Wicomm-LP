@@ -12,32 +12,32 @@ export const Header = () => {
         />
         <ul className="header__menu">
           <li className="header__menu-item">
-            <a href="#sobre" className="header__menu-link text__for">
+            <a href="#sobre" className="header__menu-link text__4">
               Sobre
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#speakers" className="header__menu-link text__for">
+            <a href="#speakers" className="header__menu-link text__4">
               Speakers
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#agenda" className="header__menu-link text__for">
+            <a href="#agenda" className="header__menu-link text__4">
               Agenda Científica
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#comissao" className="header__menu-link text__for">
+            <a href="#comissao" className="header__menu-link text__4">
               Comissão Científica
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#patrocinadores" className="header__menu-link text__for">
+            <a href="#patrocinadores" className="header__menu-link text__4">
               Patrocinadores
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#faq" className="header__menu-link text__for">
+            <a href="#faq" className="header__menu-link text__4">
               FAQ
             </a>
           </li>

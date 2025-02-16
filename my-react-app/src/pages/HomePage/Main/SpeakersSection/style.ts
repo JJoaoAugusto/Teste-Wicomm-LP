@@ -19,8 +19,8 @@ export const StyledSection = styled.section`
 
     width: 100%;
     max-width: 1200px;
-    gap: 32px;
     padding: 32px 0px;
+    gap: 32px;
   }
 
   .speakers__apresentation-title {

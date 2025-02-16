@@ -5,15 +5,22 @@ export const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   width: 100%;
-  max-width: 1200px;
+  padding: 32px 0px;
+  gap: 32px;
+  background-color: var(--blue-mid);
 
   .speakers__apresentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     width: 100%;
+    max-width: 1200px;
+    gap: 32px;
+    padding: 32px 0px;
   }
 
   .speakers__apresentation-title {
@@ -21,44 +28,55 @@ export const StyledSection = styled.section`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    padding-bottom: 24px;
+    border-bottom: solid 5px;
   }
 
   .speakers__apresentation-vignette {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 900px;
     height: 500px;
+
     background-color: var(--white);
     color: var(--blue-mid);
   }
 
-  .speakers__speakers {
+  .speakers__content {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    padding: 64px 0px;
   }
 
-  .speakers__speakers-title {
+  .speakers__content-title {
     font-weight: bold;
   }
 
-  .speakers__speakers-list {
+  .speakers__content-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     gap: 16px;
   }
 
-  .speakers__speakers-item {
+  .speakers__content-item {
     width: 200px;
     height: 264px;
+
     border: solid black;
   }
 
-  .speakers__speakers-button {
+  .speakers__content-button {
     margin-top: 16px;
   }
 
@@ -67,7 +85,9 @@ export const StyledSection = styled.section`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     width: 100%;
+    max-width: 1200px;
   }
 
   .speakers__event-about {
@@ -75,6 +95,7 @@ export const StyledSection = styled.section`
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
     width: 100%;
     max-width: 500px;
   }
@@ -96,6 +117,7 @@ export const StyledSection = styled.section`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     width: 100%;
   }
 

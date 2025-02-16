@@ -7,6 +7,19 @@ export const ResetStyle = createGlobalStyle`
         margin: 0;
     }
 
+    body {
+    font-family: 'Lato', sans-serif;
+
+    background-color: var(--blue-dark);
+    color: var(--white);
+
+    width: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Rubik', sans-serif;
+    }
+
     button {
         cursor: pointer;
         background: transparent;

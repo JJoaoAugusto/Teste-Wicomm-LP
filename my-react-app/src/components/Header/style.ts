@@ -5,18 +5,21 @@ export const StyledHeader = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   height: 70px;
-  background-color: var(--blue-dark);
+
+  background-color: var(--blue-mid);
 
   .header__nav {
-    width: 100%;
-    height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 45px;
   }
 
   .header__logo {
@@ -39,7 +42,6 @@ export const StyledHeader = styled.header`
   .header__menu-link {
     text-decoration: none;
     color: var(--white);
-    font-weight: bold;
   }
 
   .header__actions {
@@ -47,17 +49,21 @@ export const StyledHeader = styled.header`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     gap: 16px;
   }
 
   .header__button {
     width: 140px;
     height: 45px;
-    background-color: var(--blue-mid);
+
+    background-color: var(--blue-light);
     color: var(--white);
+
     border: none;
-    cursor: pointer;
     font-weight: bold;
+
+    cursor: pointer;
   }
 
   .header__language {
@@ -65,15 +71,20 @@ export const StyledHeader = styled.header`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     width: 80px;
     height: 45px;
+
+    border: none;
   }
 
   .header__language-select {
     background-color: var(--blue-dark);
     color: var(--white);
+
     border: none;
-    cursor: pointer;
     font-weight: bold;
+
+    cursor: pointer;
   }
 `;

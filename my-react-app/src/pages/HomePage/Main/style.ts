@@ -7,5 +7,4 @@ export const StyledMain = styled.main`
   align-items: center;
 
   width: 100%;
-  gap: 256px;
 `;

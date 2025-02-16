@@ -4,31 +4,19 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
   width: 100%;
   max-width: 1200px;
-
-  .about__banner {
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
+  height: 650px;
 
   .about__content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: end;
+    justify-content: space-between;
+    align-items: start;
 
     width: 100%;
-    max-width: 315px;
     gap: 32px;
   }
 
@@ -36,7 +24,9 @@ export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: start;
+
+    padding-top: 56px;
   }
 
   .about__header-text {
@@ -49,7 +39,9 @@ export const StyledSection = styled.section`
     align-items: end;
 
     width: 100%;
-    max-width: 315px;
+    max-width: 290px;
+    gap: 32px;
+    padding-top: 72px;
   }
 
   .about__info-item {
@@ -63,16 +55,20 @@ export const StyledSection = styled.section`
   }
 
   .about__description {
-    font-weight: bold;
-    text-align: right;
+    text-align: justify;
+    align-self: stretch;
   }
 
   .about__button {
-    width: 160px;
+    width: 100%;
     height: 45px;
-    background-color: var(--blue-mid);
+
+    background-color: var(--blue-light);
     color: var(--white);
+
     border: none;
+    font-weight: bold;
+
     cursor: pointer;
   }
 `;

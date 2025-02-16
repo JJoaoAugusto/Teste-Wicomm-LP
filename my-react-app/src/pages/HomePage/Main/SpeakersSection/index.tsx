@@ -6,29 +6,29 @@ export const SpeakersSection = () => {
       <article className="speakers__apresentation">
         <div className="speakers__apresentation-title">
           <img src="" alt="" />
-          <p>11 e 12 de Abril de 2024</p>
-          <p>São Paulo</p>
+          <h3 className="title__tree">11 e 12 de Abril de 2024</h3>
+          <h3 className="title__tree">São Paulo</h3>
         </div>
         <figure className="speakers__apresentation-vignette">
           <p>VINHETA DO EVENTO</p>
         </figure>
       </article>
-      <article className="speakers__speakerss">
-        <p className="speakers__speakerss-title">
-          SPEAKERsS INTERNACIONAIS CONFIRMADOS
+      <article className="speakers__content">
+        <p className="speakers__content-title">
+          SPEAKERS INTERNACIONAIS CONFIRMADOS
         </p>
-        <ul className="speakers__speakerss-list">
+        <ul className="speakers__content-list">
           {Array(5)
             .fill(null)
             .map((_, index) => (
-              <li key={index} className="speakers__speakerss-item">
+              <li key={index} className="speakers__content-item">
                 <img src="" alt="" />
                 <p>Eduardo Leme Alves da Mota</p>
                 <p></p>
               </li>
             ))}
         </ul>
-        <button className="speakers__speakerss-button">VER AGENDA</button>
+        <button className="speakers__content-button">VER AGENDA</button>
       </article>
       <article className="speakers__event">
         <div className="speakers__event-about">

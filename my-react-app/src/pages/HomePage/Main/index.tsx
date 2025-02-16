@@ -1,6 +1,7 @@
 import { AboutSection } from "./AboutSection";
 import { AddressSection } from "./AddressSection";
 import { ComissionSection } from "./ComissionSection";
+import { EmailSection } from "./EmailSection";
 import { FaqSection } from "./FaqSection";
 import { ScheduleSection } from "./ScheduleSection";
 import { SpeakersSection } from "./SpeakersSection";
@@ -15,6 +16,7 @@ export const Main = () => {
       <ScheduleSection />
       <ComissionSection />
       <FaqSection />
+      <EmailSection />
       <AddressSection />
       <SponsorsSection />
     </StyledMain>

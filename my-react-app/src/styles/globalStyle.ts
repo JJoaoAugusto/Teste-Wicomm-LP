@@ -32,41 +32,50 @@ export const GlobalStyle = createGlobalStyle`
         .title__1 {
             font-size: 40px;
             font-weight: 900px;
+            color: white;
+            color: white;
         }
 
         .title__2 {
             font-size: 36px;
             font-weight: 700px;
+            color: white;
         }
 
         .title__3 {
             font-size: 32px;
             font-weight: 400px;
+            color: white;
         }
 
         .title__4 {
             font-size: 28px;
             font-weight: 300px;
+            color: white;
         }
 
         .text__1 {
             font-size: 21px;
             font-weight: 900px;
+            color: white;
         }
 
         .text__2 {
             font-size: 18px;
             font-weight: 700px;
+            color: white;
         }
 
         .text__3 {
             font-size: 16px;
-            font-weight: 400px;
+            font-weight: 300px;
+            color: white;
         }
 
         .text__4 {
             font-size: 12px;
             font-weight: 300px;
+            color: white;
         }
     }
 `;

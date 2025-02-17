@@ -1,17 +1,22 @@
+import { Text, Title } from "../../../../styles/typography";
 import { StyledSection } from "./style";
 
-export const EmailSection = () => {
+export const NewsletterSection = () => {
   return (
     <StyledSection>
       <article className="email">
         <div className="email__info">
           <div className="email__info-title">
-            <h1 className="title__3">FIQUE POR DENTRO</h1>
-            <p className="text__3">
+            <Title size={32} weight={400}>
+              FIQUE POR DENTRO
+            </Title>
+            <Text size={16} weight={300}>
               Preencha seus dados e receba mais informações sobre o evento.
-            </p>
+            </Text>
           </div>
-          <p className="text__3">Cadastre-se na nossa newsletter ao lado</p>
+          <Text size={16} weight={500}>
+            Cadastre-se na nossa newsletter ao lado
+          </Text>
         </div>
         <div className="email__aside">
           <fieldset className="email__aside-fieldset">

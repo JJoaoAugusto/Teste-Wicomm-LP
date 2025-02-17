@@ -7,7 +7,6 @@ export const StyledSection = styled.section`
   align-items: center;
 
   width: 100%;
-  max-width: 1200px;
   padding: 64px 0px;
   gap: 64px;
 
@@ -18,11 +17,8 @@ export const StyledSection = styled.section`
     align-items: center;
 
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     gap: 40px;
-  }
-
-  .commission__title {
   }
 
   .commission__organizing-list {
@@ -32,6 +28,7 @@ export const StyledSection = styled.section`
     align-items: center;
 
     width: 100%;
+    max-width: 900px;
     gap: 16px;
   }
 
@@ -41,18 +38,20 @@ export const StyledSection = styled.section`
     gap: 16px;
 
     width: 100%;
+    max-width: 900px;
   }
 
   .commission__card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     width: 285px;
+    height: 386px;
     gap: 32px;
-    padding: 32px;
 
-    border: 1px solid var(--blue-congresso);
+    border: 1px solid var(--blue-congresso-light);
     border-radius: 16px;
   }
 
@@ -66,23 +65,31 @@ export const StyledSection = styled.section`
     height: 100%;
   }
 
+  .commission-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    gap: 16px;
+  }
+
   .commission__card-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    width: 100%;
-    padding: 12px 0px;
-    gap: 8px;
-
-    border-bottom: 1px solid var(--blue-congresso);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--blue-congresso-light);
   }
 
   .commission__card-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
   }
 
   .commission__card-link {

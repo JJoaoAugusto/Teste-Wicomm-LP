@@ -8,16 +8,13 @@ export const ResetStyle = createGlobalStyle`
     }
 
     body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
 
-    background-color: var(--blue-dark);
+    background-color: var(--blue-congresso);
     color: var(--white);
 
     width: 100%;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Rubik', sans-serif;
+    padding-bottom: 150px;
     }
 
     button {

@@ -8,7 +8,8 @@ export const StyledSection = styled.section`
 
   width: 100%;
   padding: 80px 0px;
-  background-color: var(--blue-mid);
+
+  background-color: var(--blue-congresso-mid);
 
   .faq {
     display: flex;
@@ -18,7 +19,6 @@ export const StyledSection = styled.section`
 
     width: 100%;
     max-width: 900px;
-
     gap: 40px;
   }
 
@@ -35,6 +35,20 @@ export const StyledSection = styled.section`
     gap: 16px;
   }
 
+  .faq__card-selected {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    padding: 32px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid var(--white);
+  }
+
   .faq__card {
     display: flex;
     flex-direction: row;
@@ -46,7 +60,7 @@ export const StyledSection = styled.section`
     padding: 32px;
 
     background-color: rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .faq__card-content {
@@ -54,14 +68,6 @@ export const StyledSection = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: start;
-
-    gap: 16px;
-  }
-
-  .faq__card-question {
-  }
-
-  .faq__card-answer {
   }
 
   .faq__card-button {

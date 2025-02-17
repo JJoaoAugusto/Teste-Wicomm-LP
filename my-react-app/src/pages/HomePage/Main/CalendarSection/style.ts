@@ -7,21 +7,20 @@ export const StyledSection = styled.section`
   align-items: center;
 
   width: 100%;
-  max-width: 1300px;
   gap: 56px;
   padding-bottom: 64px;
 
-  .schedule {
+  .calendar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 100%;
-    height: 460px;
+    max-width: 1300px;
   }
 
-  .schedule__banner {
+  .calendar__banner {
     width: 100%;
     display: flex;
     justify-content: start;
@@ -33,7 +32,7 @@ export const StyledSection = styled.section`
     }
   }
 
-  .schedule__info {
+  .calendar__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +42,7 @@ export const StyledSection = styled.section`
     max-width: 1200px;
     height: 100%;
     gap: 40px;
-    padding: 40px 40px 40px 0px;
+    padding: 60px;
 
     background: linear-gradient(
       to bottom,
@@ -54,36 +53,32 @@ export const StyledSection = styled.section`
     border-radius: 16px;
   }
 
-  .schedule__info-box {
+  .calendar__info-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 
     gap: 16px;
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
   }
 
-  .schedule__info-title {
-  }
-
-  .schedule__info-text {
-  }
-
-  .schedule__info-button {
+  .calendar__info-button {
     width: 200px;
     height: 45px;
 
-    background-color: var(--blue-congresso);
+    background-color: var(--blue-congresso-light);
     color: var(--white);
 
     border: none;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 600;
 
     cursor: pointer;
   }
 
-  .schedule__timer {
+  .calendar__timer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,16 +89,16 @@ export const StyledSection = styled.section`
     padding: 32px 0px;
   }
 
-  .schedule__timer-list {
+  .calendar__timer-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    gap: 64px;
+    gap: 32px;
   }
 
-  .schedule__timer-item {
+  .calendar__timer-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,13 +107,33 @@ export const StyledSection = styled.section`
     width: 140px;
     height: 140px;
 
-    background-color: var(--white);
+    background-color: var(--gray-light);
     color: var(--black);
 
     border-radius: 100%;
   }
 
-  .schedule__plan {
+  .bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    background-color: var(--white);
+  }
+
+  .calendar__plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    gap: 40px;
+    padding-bottom: 100px;
+
+    background-color: rgba(5, 12, 72, 0.2);
+  }
+
+  .calendar__plan-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,66 +141,98 @@ export const StyledSection = styled.section`
 
     width: 100%;
     max-width: 1200px;
-    gap: 40px;
-  }
-
-  .schedule__plan-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
     gap: 32px;
   }
 
-  .schedule__plan-header {
+  .calendar__plan-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
+    width: 100%;
+    max-width: 350px;
     padding: 18px;
-    border-bottom: solid 5px var(--white);
   }
 
-  .schedule__plan-title {
+  .calendar__plan-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 5px;
+
+    background: linear-gradient(
+      to right,
+      #dbc645,
+      #44a9eb,
+      #8343c7,
+      #371ebc,
+      #130769
+    );
   }
 
-  .schedule__plan-language {
+  .calendar__plan-fieldset {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    width: 260px;
-    height: 50px;
-    gap: 8px;
+    gap: 16px;
+    padding: 18px;
 
-    border: 2px solid var(white);
+    border: 1px solid var(--white);
     border-radius: 100px;
   }
 
-  .schedule__plan-label {
+  .calendar__plan-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
   }
 
-  .schedule__plan-select {
+  .calendar__plan-language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
-  .schedule__plan-rules {
+  .calendar__plan-select {
+    background-color: transparent;
+    color: var(--white);
+
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+
+    cursor: pointer;
+  }
+
+  .calendar__plan-rules {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 100%;
-    gap: 8px;
   }
 
-  .schedule__plan-text {
+  .calendar__plan-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    gap: 32px;
   }
 
-  .schedule__plan-list {
+  .calendar__plan-list-days {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -195,15 +242,14 @@ export const StyledSection = styled.section`
     gap: 32px;
   }
 
-  .schedule__plan-item {
+  .calendar__plan-item-selected {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 100%;
-    max-width: 312px;
-    height: 70px;
+    padding: 16px;
 
     background: linear-gradient(
       to right,
@@ -213,32 +259,48 @@ export const StyledSection = styled.section`
     border-radius: 100px;
   }
 
-  .schedule__plan-item-title {
-  }
+  .calendar__plan-item {
+    position: relative;
 
-  .schedule__plan-item-date {
-  }
-
-  .schedule__plan-about {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
 
     width: 100%;
+    padding: 16px;
+
+    background: transparent;
+    border-radius: 100px;
+    z-index: 0;
   }
 
-  .schedule__plan-about-text {
+  .calendar__plan-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 100px;
+    background: linear-gradient(
+      to right,
+      rgba(176, 78, 225, 1),
+      rgba(1, 175, 217, 1)
+    );
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+  }
+
+  .calendar__plan-rules-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 
     width: 100%;
-    height: 24px;
   }
 
-  .schedule__plan-content {
+  .calendar__plan-about {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -248,11 +310,16 @@ export const StyledSection = styled.section`
     padding: 18px 56px 56px 56px;
     gap: 22px;
 
-    background-color: var(--blue-light);
+    background: linear-gradient(
+      to bottom,
+      rgba(87, 203, 230, 0.1),
+      rgba(16, 13, 157, 0.1)
+    );
+
     border-radius: 8px;
   }
 
-  .schedule__content-header {
+  .calendar__plan-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,37 +336,30 @@ export const StyledSection = styled.section`
     border-radius: 8px;
   }
 
-  .schedule__content-title {
-  }
-
-  .schedule__content-text {
-  }
-
-  .schedule__content-list {
+  .calendar__plan-list-content {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 
     width: 100%;
-    gap: 16px;
+    gap: 22px;
   }
 
-  .schedule__card {
+  .calendar__plan-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     width: 100%;
-    height: 100px;
     gap: 128px;
-    padding: 56px 32px;
+    padding: 40px 32px;
 
-    background-color: var(--blue-mid);
+    background-color: rgba(255, 255, 255, 0.05);
   }
 
-  .schedule__card-date {
+  .calendar__plan-card-date {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,13 +370,7 @@ export const StyledSection = styled.section`
     gap: 8px;
   }
 
-  .schedule__card-date-day {
-  }
-
-  .schedule__card-date-event {
-  }
-
-  .schedule__card-content {
+  .calendar__plan-card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -324,11 +378,5 @@ export const StyledSection = styled.section`
 
     width: 100%;
     gap: 12px;
-  }
-
-  .schedule__card-content-speaker {
-  }
-
-  .schedule__card-content-role {
   }
 `;

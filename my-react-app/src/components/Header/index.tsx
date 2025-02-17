@@ -1,5 +1,6 @@
-import LogoHuntington2024HorizBranco1 from "../../assets/LogoHuntington2024HorizBranco1.svg";
 import { StyledHeader } from "./style";
+import LogoHuntington2024HorizBranco1 from "../../assets/logoImages/LogoHuntington2024HorizBranco1.svg";
+import BrasilICON from "../../assets/iconImages/BrasilICON.svg";
 
 export const Header = () => {
   return (
@@ -12,32 +13,32 @@ export const Header = () => {
         />
         <ul className="header__menu">
           <li className="header__menu-item">
-            <a href="#sobre" className="header__menu-link text__4">
-              Sobre
+            <a href="#sobre" className="header__menu-link">
+              SOBRE
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#speakers" className="header__menu-link text__4">
-              Speakers
+            <a href="#speakers" className="header__menu-link">
+              SPEAKERS
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#agenda" className="header__menu-link text__4">
-              Agenda Científica
+            <a href="#agenda" className="header__menu-link">
+              AGENDA CIENTÍFICA
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#comissao" className="header__menu-link text__4">
-              Comissão Científica
+            <a href="#comissao" className="header__menu-link">
+              COMISSÃO CIENTÍFICA
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#patrocinadores" className="header__menu-link text__4">
-              Patrocinadores
+            <a href="#patrocinadores" className="header__menu-link">
+              PATROCINADORES
             </a>
           </li>
           <li className="header__menu-item">
-            <a href="#faq" className="header__menu-link text__4">
+            <a href="#faq" className="header__menu-link">
               FAQ
             </a>
           </li>
@@ -50,9 +51,16 @@ export const Header = () => {
             INSCREVA-SE
           </button>
           <fieldset className="header__language">
+            <figure>
+              <img src={BrasilICON} alt="" />
+            </figure>
             <select className="header__language-select">
-              <option value="pt">PT</option>
-              <option value="en">EN</option>
+              <option value="pt">
+                <p>PT</p>
+              </option>
+              <option value="en">
+                <p>EN</p>
+              </option>
             </select>
           </fieldset>
         </div>

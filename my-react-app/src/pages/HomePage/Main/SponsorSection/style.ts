@@ -5,9 +5,10 @@ export const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   width: 100%;
-  max-width: 1200px;
-  gap: 64px;
+  gap: 86px;
+  padding-bottom: 120px;
 
   .sponsors {
     display: flex;
@@ -16,6 +17,7 @@ export const StyledSection = styled.section`
     align-items: center;
 
     width: 100%;
+    max-width: 1200px;
     gap: 32px;
   }
 
@@ -26,10 +28,14 @@ export const StyledSection = styled.section`
     align-items: start;
 
     width: 100%;
+    max-width: 1200px;
+    height: 178px;
     gap: 32px;
   }
 
   .sponsors__title {
+    position: relative;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -37,8 +43,6 @@ export const StyledSection = styled.section`
 
     width: 100%;
     padding-bottom: 16px;
-
-    position: relative;
   }
 
   .sponsors__title::after {
@@ -47,15 +51,14 @@ export const StyledSection = styled.section`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px; /* Espessura da borda */
+    height: 2px;
     background: linear-gradient(
       to right,
-      rgba(219, 198, 69, 0.5),
-      /* #DBC645 com 50% de opacidade */ rgba(68, 169, 235, 0.5),
-      /* #44A9EB com 50% de opacidade */ rgba(131, 67, 199, 0.5),
-      /* #8343C7 com 50% de opacidade */ rgba(68, 169, 235, 0.5),
-      /* #44A9EB com 50% de opacidade */ rgba(219, 198, 69, 0.5)
-        /* #DBC645 com 50% de opacidade */
+      rgba(219, 198, 69, 1),
+      rgba(68, 169, 235, 1),
+      rgba(131, 67, 199, 1),
+      rgba(68, 169, 235, 1),
+      rgba(219, 198, 69, 1)
     );
   }
 
@@ -66,7 +69,15 @@ export const StyledSection = styled.section`
     align-items: center;
 
     width: 100%;
+    height: 85px;
     gap: 64px;
+  }
+
+  .sponsors__list-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .sponsors__list-figure {

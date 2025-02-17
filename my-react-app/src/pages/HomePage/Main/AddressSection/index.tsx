@@ -1,19 +1,32 @@
 import { StyledSection } from "./style";
-import MapIMG from "../../../../assets/MapIMG.svg";
+import MapIMG from "../../../../assets/eventImages/MapIMG.svg";
+import { Text, Title } from "../../../../styles/typography";
 
 export const AddressSection = () => {
   return (
     <StyledSection>
       <article className="address">
         <div className="address__info">
-          <p className="address__info-title title__3">COMO CHEGAR</p>
+          <Title size={32} weight={400}>
+            COMO CHEGAR
+          </Title>
           <div className="address__info-details">
-            <p className="address__info-subtitle title__4">ENDEREÇO:</p>
-            <p className="text__2">Hotel Tivoli Mofarrej</p>
-            <p className="text__2">São Paulo/SP - Brasil</p>
-            <p className="text__2">
+            <Text
+              size={24}
+              weight={500}
+              className="address__info-subtitle title__4"
+            >
+              ENDEREÇO:
+            </Text>
+            <Text size={18} weight={400}>
+              Hotel Tivoli Mofarrej
+            </Text>
+            <Text size={18} weight={400}>
+              São Paulo/SP - Brasil
+            </Text>
+            <Text size={18} weight={300}>
               Alameda Santos, 1437 - Cerqueira César, São Paulo
-            </p>
+            </Text>
           </div>
         </div>
         <figure className="address__map">

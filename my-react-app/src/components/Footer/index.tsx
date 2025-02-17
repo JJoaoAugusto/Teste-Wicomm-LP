@@ -1,5 +1,6 @@
 import { StyledFooter } from "./style";
-import LogoHuntington2024HorizBranco1 from "../../assets/LogoHuntington2024HorizBranco1.svg";
+import LogoHuntington2024HorizBranco1 from "../../assets/logoImages/LogoHuntington2024HorizBranco1.svg";
+import { Text } from "../../styles/typography";
 
 export const Footer = () => {
   return (
@@ -12,13 +13,23 @@ export const Footer = () => {
           />
         </figure>
         <div className="footer__contacts">
-          <p className="footer__title">CONTATO</p>
-          <p className="footer__text">congresso@huntington.com.br</p>
-          <p className="footer__text">SIGA-NOS INSTAGRAM</p>
+          <Text size={16} weight={400}>
+            CONTATO
+          </Text>
+          <Text size={12} weight={300} className="footer__text">
+            congresso@huntington.com.br
+          </Text>
+          <Text size={16} weight={400}>
+            SIGA-NOS INSTAGRAM
+          </Text>
         </div>
         <div className="footer__rules">
-          <p className="footer__text">Regras de Cancelamento</p>
-          <p className="footer__text">POLÍTICA DE PRIVACIDADE</p>
+          <Text size={16} weight={400}>
+            Regras de Cancelamento
+          </Text>
+          <Text size={16} weight={400}>
+            POLÍTICA DE PRIVACIDADE
+          </Text>
         </div>
       </div>
     </StyledFooter>

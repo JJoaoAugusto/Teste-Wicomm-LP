@@ -9,8 +9,6 @@ export const StyledHeader = styled.header`
   width: 100%;
   height: 70px;
 
-  background-color: var(--blue-mid);
-
   .header__nav {
     display: flex;
     flex-direction: row;
@@ -32,6 +30,7 @@ export const StyledHeader = styled.header`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     gap: 32px;
   }
 
@@ -41,6 +40,8 @@ export const StyledHeader = styled.header`
 
   .header__menu-link {
     text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
     color: var(--white);
   }
 
@@ -57,7 +58,10 @@ export const StyledHeader = styled.header`
     width: 140px;
     height: 45px;
 
-    background-color: var(--blue-light);
+    font-size: 12px;
+    font-weight: 500;
+
+    background-color: var(--purple);
     color: var(--white);
 
     border: none;
@@ -79,11 +83,12 @@ export const StyledHeader = styled.header`
   }
 
   .header__language-select {
-    background-color: var(--blue-dark);
+    background-color: transparent;
     color: var(--white);
 
     border: none;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 400;
 
     cursor: pointer;
   }

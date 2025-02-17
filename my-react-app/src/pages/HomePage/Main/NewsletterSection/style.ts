@@ -64,6 +64,8 @@ export const StyledSection = styled.section`
   }
 
   .email__aside-input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
     color: var(--white);
     opacity: 0.8;
   }
@@ -73,10 +75,11 @@ export const StyledSection = styled.section`
     height: 45px;
 
     background-color: var(--white);
-    color: var(--blue-light);
-
     border: none;
-    font-weight: bold;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--blue-congresso);
 
     cursor: pointer;
   }

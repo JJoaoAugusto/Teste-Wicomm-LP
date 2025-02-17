@@ -7,9 +7,8 @@ export const StyledFooter = styled.footer`
   align-items: center;
   width: 100%;
   height: 190px;
-  padding-top: 64px;
 
-  background-color: var(--blue-dark);
+  background-color: rgba(0, 2, 37, 0.2);
   color: var(--white);
 
   .footer__container {
@@ -28,14 +27,17 @@ export const StyledFooter = styled.footer`
   }
 
   .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
   }
 
   .footer__rules {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: start;
   }
 
   .footer__title {

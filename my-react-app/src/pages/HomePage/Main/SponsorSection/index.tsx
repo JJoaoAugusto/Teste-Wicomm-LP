@@ -1,26 +1,29 @@
-import LogoHuntington2024HorizBranco1 from "../../../../assets/LogoHuntington2024HorizBranco1.svg";
-import LogoOrganon from "../../../../assets/LogoOrganon.svg";
-import LogoMerck from "../../../../assets/LogoMerck.svg";
-import LogoDasa from "../../../../assets/LogoDasa.svg";
-import LogoIngamed from "../../../../assets/LogoIngamed.svg";
-import LogoAbbott from "../../../../assets/LogoAbbott.svg";
-import LogoCRH from "../../../../assets/LogoCRH.svg";
-import LogoCrioBrasil from "../../../../assets/LogoCrioBrasil.svg";
-import LogoFerring from "../../../../assets/LogoFerring.svg";
-import LogoIgenomix from "../../../../assets/LogoIgenomix.svg";
-import LogoHandle from "../../../../assets/LogoHandle.svg";
-import LogoSpectrun from "../../../../assets/LogoSpectrun.svg";
-import LogoUCB from "../../../../assets/LogoUcb.svg";
-import LogoVitrolife from "../../../../assets/LogoVitrolife.svg";
-import LogoSBRH from "../../../../assets/LogoSBRH.svg";
-import LogoSBRA from "../../../../assets/LogoSBRA.svg";
+import LogoHuntington2024HorizBranco1 from "../../../../assets/logoImages/LogoHuntington2024HorizBranco1.svg";
+import LogoOrganon from "../../../../assets/logoImages/LogoOrganon.svg";
+import LogoMerck from "../../../../assets/logoImages/LogoMerck.svg";
+import LogoDasa from "../../../../assets/logoImages/LogoDasa.svg";
+import LogoIngamed from "../../../../assets/logoImages/LogoIngamed.svg";
+import LogoAbbott from "../../../../assets/logoImages/LogoAbbott.svg";
+import LogoCRH from "../../../../assets/logoImages/LogoCRH.svg";
+import LogoCrioBrasil from "../../../../assets/logoImages/LogoCrioBrasil.svg";
+import LogoFerring from "../../../../assets/logoImages/LogoFerring.svg";
+import LogoIgenomix from "../../../../assets/logoImages/LogoIgenomix.svg";
+import LogoHandle from "../../../../assets/logoImages/LogoHandle.svg";
+import LogoSpectrun from "../../../../assets/logoImages/LogoSpectrun.svg";
+import LogoUCB from "../../../../assets/logoImages/LogoUcb.svg";
+import LogoVitrolife from "../../../../assets/logoImages/LogoVitrolife.svg";
+import LogoSBRH from "../../../../assets/logoImages/LogoSBRH.svg";
+import LogoSBRA from "../../../../assets/logoImages/LogoSBRA.svg";
 import { StyledSection } from "./style";
+import { blue, Title } from "../../../../styles/typography";
 
 export const SponsorsSection = () => {
   return (
     <StyledSection>
       <article className="sponsors">
-        <p className="sponsors__title title-4">Realização</p>
+        <Title className="sponsors__title" size={24} weight={500} color={blue}>
+          REAlIZAÇÃO
+        </Title>
         <ul className="sponsors__list">
           <li className="sponsors__list-card">
             <figure className="sponsors__list-figure">
@@ -36,7 +39,14 @@ export const SponsorsSection = () => {
 
       <div className="sponsors__container">
         <article className="sponsors">
-          <p className="sponsors__title title-4">PATROCÍNIO OURO</p>
+          <Title
+            className="sponsors__title"
+            size={24}
+            weight={500}
+            color={blue}
+          >
+            PATROCÍNIO OURO
+          </Title>
           <ul className="sponsors__list">
             <li className="sponsors__list-card">
               <figure className="sponsors__list-figure">
@@ -60,7 +70,14 @@ export const SponsorsSection = () => {
         </article>
 
         <article className="sponsors">
-          <p className="sponsors__title title-4">PATROCÍNIO PRATA</p>
+          <Title
+            className="sponsors__title"
+            size={24}
+            weight={500}
+            color={blue}
+          >
+            PATROCÍNIO PRATA
+          </Title>
           <ul className="sponsors__list">
             <li className="sponsors__list-card">
               <figure className="sponsors__list-figure">
@@ -85,7 +102,9 @@ export const SponsorsSection = () => {
       </div>
 
       <article className="sponsors">
-        <p className="sponsors__title title-4">PATROCÍNIO BRONZE</p>
+        <Title className="sponsors__title" size={24} weight={500} color={blue}>
+          PATROCÍNIO BRONZE
+        </Title>
         <ul className="sponsors__list">
           <li className="sponsors__list-card">
             <figure className="sponsors__list-figure">
@@ -177,7 +196,14 @@ export const SponsorsSection = () => {
 
       <div className="sponsors__container">
         <article className="sponsors">
-          <p className="sponsors__title title-4">APOIO INSTITUCIONAL</p>
+          <Title
+            className="sponsors__title"
+            size={24}
+            weight={500}
+            color={blue}
+          >
+            APOIO INSTITUCIONAL
+          </Title>
           <ul className="sponsors__list">
             <li className="sponsors__list-card">
               <figure className="sponsors__list-figure">
@@ -200,7 +226,14 @@ export const SponsorsSection = () => {
           </ul>
         </article>
         <article className="sponsors">
-          <p className="sponsors__title title-4">MÍDIA OFICIAL</p>
+          <Title
+            className="sponsors__title"
+            size={24}
+            weight={500}
+            color={blue}
+          >
+            MÍDIA OFICIAL
+          </Title>
           <ul className="sponsors__list">
             <li className="sponsors__list-card">
               <figure className="sponsors__list-figure">

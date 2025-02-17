@@ -11,13 +11,6 @@ export const StyledArticle = styled.article`
     position: relative;
   }
 
-  .bullet {
-    width: 10px;
-    height: 10px;
-    border-radius: 25px;
-    background-color: var(--white);
-  }
-
   .speakers__apresentation-title::after {
     content: "";
     position: absolute;

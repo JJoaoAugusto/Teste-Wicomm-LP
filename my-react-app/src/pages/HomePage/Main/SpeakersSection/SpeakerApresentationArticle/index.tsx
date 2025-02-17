@@ -1,4 +1,4 @@
-import { blue, Title, white } from "../../../../../styles/typography";
+import { blue, Bullet, Title, white } from "../../../../../styles/typography";
 import IconCalendary from "../../../../../assets/iconImages/IconCalendary.svg";
 import { StyledArticle } from "./style";
 
@@ -10,7 +10,7 @@ export const SpeakerApresentationArticle = () => {
         <Title color={white} size={32} weight={300}>
           11 e 12 de Abril de 2024
         </Title>
-        <span className="bullet"></span>
+        <Bullet></Bullet>
         <Title color={blue} size={32} weight={300}>
           São Paulo/SP
         </Title>

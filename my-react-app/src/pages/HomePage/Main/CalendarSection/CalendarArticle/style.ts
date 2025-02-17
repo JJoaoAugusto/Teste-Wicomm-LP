@@ -1,24 +1,13 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.section`
+export const StyledArticle = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   width: 100%;
-  gap: 56px;
-  padding-bottom: 64px;
-
-  /* .calendar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    max-width: 1300px;
-  }
+  max-width: 1300px;
 
   .calendar__banner {
     width: 100%;
@@ -76,9 +65,7 @@ export const StyledSection = styled.section`
     font-weight: 600;
 
     cursor: pointer;
-  } */
-
-  /* ---------- */
+  }
 
   /* .calendar__timer {
     display: flex;
@@ -120,7 +107,7 @@ export const StyledSection = styled.section`
     height: 10px;
     border-radius: 25px;
     background-color: var(--white);
-  } */
+  }
 
   .calendar__plan {
     display: flex;
@@ -380,5 +367,5 @@ export const StyledSection = styled.section`
 
     width: 100%;
     gap: 12px;
-  }
+  } */
 `;

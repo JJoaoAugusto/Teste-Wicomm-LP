@@ -10,37 +10,6 @@ export const StyledSection = styled.section`
   padding: 64px 0px;
   gap: 64px;
 
-  .commission {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    max-width: 1200px;
-    gap: 40px;
-  }
-
-  .commission__organizing-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    max-width: 900px;
-    gap: 16px;
-  }
-
-  .commission__scientific-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-
-    width: 100%;
-    max-width: 900px;
-  }
-
   .commission__card {
     display: flex;
     flex-direction: column;

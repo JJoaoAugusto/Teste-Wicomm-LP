@@ -1,6 +1,6 @@
 import { StyledHeader } from "./style";
 import LogoHuntington2024HorizBranco1 from "../../assets/logoImages/LogoHuntington2024HorizBranco1.svg";
-import BrasilICON from "../../assets/iconImages/BrasilICON.svg";
+import IconBrasil from "../../assets/iconImages/IconBrasil.svg";
 
 export const Header = () => {
   return (
@@ -52,7 +52,7 @@ export const Header = () => {
           </button>
           <fieldset className="header__language">
             <figure>
-              <img src={BrasilICON} alt="" />
+              <img src={IconBrasil} alt="" />
             </figure>
             <select className="header__language-select">
               <option value="pt">PT</option>

@@ -1,3 +1,4 @@
+import { StyledArticle } from "./style";
 import {
   Title,
   Text,
@@ -6,7 +7,8 @@ import {
   blue,
 } from "../../../../../styles/typography";
 import EventImage from "../../../../../assets/eventImages/EventImage.svg";
-import { StyledArticle } from "./style";
+import IconLeftArrowBlue from "../../../../../assets/iconImages/IconLeftArrowBlue.svg";
+import IconRightArrowBlue from "../../../../../assets/iconImages/IconRightArrowBlue.svg";
 
 export const SpeakersEventArticle = () => {
   return (
@@ -62,15 +64,27 @@ export const SpeakersEventArticle = () => {
             </div>
           </div>
         </div>
-        <figure className="speakers__event-images">
+        <div className="speakers__event-carousel">
           <img
-            src={EventImage}
-            alt="imagem do evento mostrando uma apresentação com o publico assistindo"
+            src={IconLeftArrowBlue}
+            alt="Ícone que representa uma flecha para a esquerda"
+            className="speakers__event-carousel-arrow"
           />
-          <Text size={11} weight={300}>
-            Imagens do evento realizado em 2023
-          </Text>
-        </figure>
+          <figure className="speakers__event-images">
+            <img
+              src={EventImage}
+              alt="imagem do evento mostrando uma apresentação com o publico assistindo"
+            />
+            <Text size={11} weight={300}>
+              Imagens do evento realizado em 2023
+            </Text>
+          </figure>
+          <img
+            src={IconRightArrowBlue}
+            alt="Ícone que representa uma flecha para a direita"
+            className="speakers__event-carousel-arrow"
+          />
+        </div>
       </div>
     </StyledArticle>
   );

@@ -5,7 +5,7 @@ import { PlanningArticle } from "./PlanningArticle";
 
 export const CalendarSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="calendar">
       <CalendarArticle />
       <TimerArticle />
       <PlanningArticle />

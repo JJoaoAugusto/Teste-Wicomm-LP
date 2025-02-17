@@ -45,3 +45,16 @@ export const Span = styled.span<SpanProps>`
   line-height: ${(props) => props.line ?? 30}px;
   color: ${(props) => props.color ?? white};
 `;
+
+interface BulletProps {
+  width?: 5 | 10;
+  height?: 5 | 10;
+  background?: string;
+}
+
+export const Bullet = styled.span<BulletProps>`
+  width: ${(props) => props.width ?? 10}px;
+  height: ${(props) => props.height ?? 10}px;
+  background: ${(props) => props.background ?? blue};
+  border-radius: 100%;
+`;

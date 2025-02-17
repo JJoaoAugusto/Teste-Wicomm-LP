@@ -1,8 +1,10 @@
+import { StyledArticle } from "./style";
 import { Title, Text, white, blue } from "../../../../../styles/typography";
 import IconBrasilBig from "../../../../../assets/iconImages/IconBrasilBig.svg";
 import EduardoLeme from "../../../../../assets/eventImages/EduardoLeme.svg";
 import IconMore from "../../../../../assets/iconImages/IconMore.svg";
-import { StyledArticle } from "./style";
+import IconRightArrow from "../../../../../assets/iconImages/IconRightArrow.svg";
+import IconLeftArrow from "../../../../../assets/iconImages/IconLeftArrow.svg";
 
 export const SpeakersContentArticle = () => {
   return (
@@ -16,6 +18,11 @@ export const SpeakersContentArticle = () => {
         </Title>
       </div>
       <ul className="speakers__content-list">
+        <img
+          src={IconLeftArrow}
+          alt="Ícone que reprenta uma flecha para a esquerda"
+          className="speakers__content-arrow"
+        />
         {Array(5)
           .fill(null)
           .map((_, index) => (
@@ -30,7 +37,7 @@ export const SpeakersContentArticle = () => {
               <Text size={12} weight={400}>
                 Eduardo Leme Alves da Mota
               </Text>
-              <div className="item__subtext-box">
+              <div className="item__actions">
                 <img
                   src={IconMore}
                   alt="Ícone que representa o simbolo de adição +"
@@ -41,6 +48,11 @@ export const SpeakersContentArticle = () => {
               </div>
             </li>
           ))}
+        <img
+          src={IconRightArrow}
+          alt="Ícone que reprenta uma flecha para a direita"
+          className="speakers__content-arrow"
+        />
       </ul>
       <button className="speakers__content-button">VER AGENDA</button>
     </StyledArticle>

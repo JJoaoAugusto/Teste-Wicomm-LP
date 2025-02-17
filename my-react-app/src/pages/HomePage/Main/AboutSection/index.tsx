@@ -3,7 +3,7 @@ import { StyledSection } from "./style";
 
 export const AboutSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="about">
       <AboutArticle />
     </StyledSection>
   );

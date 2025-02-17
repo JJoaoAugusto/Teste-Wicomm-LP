@@ -3,7 +3,7 @@ import { StyledSection } from "./style";
 
 export const NewsletterSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="newsletter">
       <EmailArticle />
     </StyledSection>
   );

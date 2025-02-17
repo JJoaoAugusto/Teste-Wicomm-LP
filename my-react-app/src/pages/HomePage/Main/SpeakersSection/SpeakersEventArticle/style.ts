@@ -55,6 +55,17 @@ export const StyledArticle = styled.article`
     border-left: 0.75px solid var(--white);
   }
 
+  .speakers__event-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speakers__event-carousel-arrow {
+    cursor: pointer;
+  }
+
   .speakers__event-images {
     display: flex;
     flex-direction: column;
@@ -64,8 +75,6 @@ export const StyledArticle = styled.article`
     width: 550px;
     height: 550px;
     gap: 16px;
-
-    overflow-x: scroll;
 
     img {
       width: 450px;

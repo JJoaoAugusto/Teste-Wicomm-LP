@@ -61,7 +61,7 @@ export const StyledArticle = styled.article`
     left: 0;
   }
 
-  .item__subtext-box {
+  .item__actions {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,6 +69,8 @@ export const StyledArticle = styled.article`
 
     width: 100%;
     gap: 8px;
+
+    cursor: pointer;
   }
 
   .speakers__content-button {
@@ -80,6 +82,10 @@ export const StyledArticle = styled.article`
     background-color: var(--blue-congresso-light);
     color: var(--white);
 
+    cursor: pointer;
+  }
+
+  .speakers__content-arrow {
     cursor: pointer;
   }
 `;

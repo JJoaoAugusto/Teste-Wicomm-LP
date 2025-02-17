@@ -1,4 +1,10 @@
-import { Span, Text, Title, blue } from "../../../../../styles/typography";
+import {
+  Bullet,
+  Text,
+  Title,
+  blue,
+  white,
+} from "../../../../../styles/typography";
 import IconBrasil from "../../../../../assets/iconImages/IconBrasil.svg";
 import { StyledArticle } from "./style";
 
@@ -49,32 +55,43 @@ export const PlanningArticle = () => {
             <Text size={12} weight={500}>
               BUSINESS CLASS
             </Text>
-            <Text size={22} weight={500}>
-              QUI 10 DE ABRIL
-            </Text>
+            <div className="calendar__plan-item-date">
+              <Text size={22} weight={500}>
+                QUI
+              </Text>
+              <Bullet height={5} width={5} background={white}></Bullet>
+              <Text size={22} weight={500}>
+                QUI 10 DE ABRIL
+              </Text>
+            </div>
           </li>
           <li className="calendar__plan-item">
             <Text size={12} weight={500}>
               CONGRESSO 1 DIA
             </Text>
-            <Text size={22} weight={500}>
-              {" "}
-              <Span size={22} weight={300}>
+            <div className="calendar__plan-item-date">
+              <Text size={22} weight={300}>
                 SEX
-              </Span>{" "}
-              11 DE ABRIL
-            </Text>
+              </Text>
+              <Bullet height={5} width={5} background={white}></Bullet>
+              <Text size={22} weight={500}>
+                11 DE ABRIL
+              </Text>
+            </div>
           </li>
           <li className="calendar__plan-item">
             <Text size={12} weight={500}>
               CONGRESSO 2 DIA
             </Text>
-            <Text size={22} weight={500}>
-              <Span size={22} weight={300}>
+            <div className="calendar__plan-item-date">
+              <Text size={22} weight={300}>
                 SÁB
-              </Span>{" "}
-              12 DE ABRIL
-            </Text>
+              </Text>{" "}
+              <Bullet height={5} width={5} background={white}></Bullet>
+              <Text size={22} weight={500}>
+                12 DE ABRIL
+              </Text>
+            </div>
           </li>
         </ul>
 

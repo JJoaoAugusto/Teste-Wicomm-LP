@@ -1,5 +1,11 @@
 import { StyledArticle } from "./style";
-import { Text, Title, black } from "../../../../../styles/typography";
+import {
+  Bullet,
+  Text,
+  Title,
+  black,
+  blue,
+} from "../../../../../styles/typography";
 
 export const TimerArticle = () => {
   return (
@@ -13,7 +19,7 @@ export const TimerArticle = () => {
             DIAS
           </Text>
         </li>
-        <span className="bullet"></span>
+        <Bullet height={10} width={10} background={blue}></Bullet>
         <li className="calendar__timer-item">
           <Title size={40} weight={500} color={black}>
             00
@@ -22,7 +28,7 @@ export const TimerArticle = () => {
             HORAS
           </Text>
         </li>
-        <span className="bullet"></span>
+        <Bullet height={10} width={10} background={blue}></Bullet>
         <li className="calendar__timer-item">
           <Title size={40} weight={500} color={black}>
             25
@@ -31,7 +37,7 @@ export const TimerArticle = () => {
             MIN
           </Text>
         </li>
-        <span className="bullet"></span>
+        <Bullet height={10} width={10} background={blue}></Bullet>
         <li className="calendar__timer-item">
           <Title size={40} weight={500} color={black}>
             05

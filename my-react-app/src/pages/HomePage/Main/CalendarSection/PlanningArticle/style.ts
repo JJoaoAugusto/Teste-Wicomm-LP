@@ -154,6 +154,22 @@ export const StyledArticle = styled.article`
     z-index: 0;
   }
 
+  .calendar__plan-item-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+  }
+
+  .bullet {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: var(--white);
+  }
+
   .calendar__plan-item::before {
     content: "";
     position: absolute;

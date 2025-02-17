@@ -33,11 +33,4 @@ export const StyledArticle = styled.article`
 
     border-radius: 100%;
   }
-
-  .bullet {
-    width: 10px;
-    height: 10px;
-    border-radius: 25px;
-    background-color: var(--white);
-  }
 `;

@@ -3,7 +3,7 @@ import { StyledSection } from "./style";
 
 export const AddressSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="address">
       <MapArticle />
     </StyledSection>
   );

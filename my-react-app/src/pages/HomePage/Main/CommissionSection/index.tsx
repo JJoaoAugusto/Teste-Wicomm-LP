@@ -4,7 +4,7 @@ import { ScientificCommissionArticle } from "./ScientificCommissionArticle";
 
 export const CommissionSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="commission">
       <CommissionOrganizingArticle />
       <ScientificCommissionArticle />
     </StyledSection>

@@ -33,18 +33,32 @@ export const StyledFooter = styled.footer`
     align-items: start;
   }
 
+  .footer__social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+    cursor: pointer;
+  }
+
   .footer__rules {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+
+    gap: 4px;
   }
 
-  .footer__title {
-    font-weight: bold;
+  .footer__rules-policy {
+    padding: 0px;
+    cursor: pointer;
   }
 
-  .footer__text {
-    font-size: 14px;
+  .footer__rules-privacy {
+    padding: 0px;
+    cursor: pointer;
   }
 `;

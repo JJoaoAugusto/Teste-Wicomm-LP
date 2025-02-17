@@ -5,7 +5,7 @@ import { StyledSection } from "./style";
 
 export const SpeakersSection = () => {
   return (
-    <StyledSection className="speakers">
+    <StyledSection id="speakers">
       <SpeakerApresentationArticle />
       <SpeakersContentArticle />
       <SpeakersEventArticle />

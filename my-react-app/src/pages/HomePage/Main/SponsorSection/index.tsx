@@ -8,7 +8,7 @@ import { SponsorMidiaArticle } from "./SponsorMidiaArticle";
 
 export const SponsorsSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="sponsors">
       <SponsorRealizationArticle />
 
       <div className="sponsors__container">

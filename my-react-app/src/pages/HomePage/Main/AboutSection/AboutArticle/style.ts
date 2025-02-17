@@ -4,7 +4,7 @@ export const StyledArticle = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
 
   width: 100%;
   max-width: 1200px;
@@ -14,10 +14,12 @@ export const StyledArticle = styled.article`
   .about__header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
 
-    padding-top: 56px;
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
   }
 
   .about__header-title {
@@ -32,50 +34,51 @@ export const StyledArticle = styled.article`
     color: var(--blue-congresso-light);
   }
 
-  .about__info {
+  .about__aside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: end;
 
     width: 100%;
     max-width: 300px;
+    height: 100%;
     gap: 32px;
     padding-top: 72px;
   }
 
-  .about__info-item {
+  .about__aside-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
   }
 
-  .about__info-title {
+  .about__aside-title {
     font-size: 32px;
     font-weight: 300;
     color: var(--white);
   }
 
-  .about__info-subtitle {
+  .about__aside-subtitle {
     font-size: 28px;
     font-weight: 300;
     color: var(--blue-congresso-light);
   }
 
-  .about__info-description {
+  .about__aside-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
   }
 
-  .about__info-text {
+  .about__aside-text {
     font-size: 18px;
     font-weight: 700;
   }
 
-  .about__info-subtext {
+  .about__aside-subtext {
     font-size: 16px;
     font-weight: 300;
     width: fit-content;

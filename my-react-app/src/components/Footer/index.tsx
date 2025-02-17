@@ -1,6 +1,7 @@
 import { StyledFooter } from "./style";
-import LogoHuntington2024HorizBranco1 from "../../assets/logoImages/LogoHuntington2024HorizBranco1.svg";
 import { Text } from "../../styles/typography";
+import LogoHuntington2024HorizBranco1 from "../../assets/logoImages/LogoHuntington2024HorizBranco1.svg";
+import IconInstagram from "../../assets/iconImages/IconInstagram.svg";
 
 export const Footer = () => {
   return (
@@ -19,15 +20,24 @@ export const Footer = () => {
           <Text size={12} weight={300} className="footer__text">
             congresso@huntington.com.br
           </Text>
-          <Text size={16} weight={400}>
-            SIGA-NOS INSTAGRAM
-          </Text>
+          <div className="footer__social-media">
+            <Text size={16} weight={400}>
+              SIGA-NOS
+            </Text>
+            <img
+              src={IconInstagram}
+              alt="Ícone que reprenta o símbolo da rede social Instagram"
+            />
+            <Text size={12} weight={300}>
+              INSTAGRAM
+            </Text>
+          </div>
         </div>
         <div className="footer__rules">
-          <Text size={16} weight={400}>
-            Regras de Cancelamento
+          <Text size={16} weight={400} className="footer__rules-policy">
+            REGRAS DE CANCELAMENTO
           </Text>
-          <Text size={16} weight={400}>
+          <Text size={16} weight={400} className="footer__rules-privacy">
             POLÍTICA DE PRIVACIDADE
           </Text>
         </div>

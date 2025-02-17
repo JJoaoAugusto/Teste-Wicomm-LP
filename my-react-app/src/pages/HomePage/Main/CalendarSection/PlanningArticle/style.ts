@@ -136,6 +136,7 @@ export const StyledArticle = styled.article`
       rgba(1, 175, 217, 1)
     );
     border-radius: 100px;
+    cursor: pointer;
   }
 
   .calendar__plan-item {
@@ -152,6 +153,7 @@ export const StyledArticle = styled.article`
     background: transparent;
     border-radius: 100px;
     z-index: 0;
+    cursor: pointer;
   }
 
   .calendar__plan-item-date {
@@ -205,66 +207,5 @@ export const StyledArticle = styled.article`
     );
 
     border-radius: 8px;
-  }
-
-  .calendar__plan-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100px;
-
-    background: linear-gradient(
-      to right,
-      rgba(176, 78, 225, 1),
-      rgba(1, 175, 217, 1)
-    );
-    border-radius: 8px;
-  }
-
-  .calendar__plan-list-content {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-
-    width: 100%;
-    gap: 22px;
-  }
-
-  .calendar__plan-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    gap: 128px;
-    padding: 40px 32px;
-
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  .calendar__plan-card-date {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-
-    width: 100%;
-    max-width: 120px;
-    gap: 8px;
-  }
-
-  .calendar__plan-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-
-    width: 100%;
-    gap: 12px;
   }
 `;

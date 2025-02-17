@@ -1,7 +1,7 @@
 import { StyledSection } from "./style";
 import MauricioChehin from "../../../../assets/eventImages/MauricioChehin.svg";
 import Alinelorenzon from "../../../../assets/eventImages/Alinelorenzon.svg";
-import Eduardoleme2 from "../../../../assets/eventImages/EduardoLeme2.svg";
+import EduardolemeBig from "../../../../assets/eventImages/EduardoLemeBig.svg";
 import { blue, Span, Text, Title, white } from "../../../../styles/typography";
 
 export const CommissionSection = () => {
@@ -90,7 +90,7 @@ export const CommissionSection = () => {
             <li key={index} className="commission__card">
               <figure className="commission__card-figure">
                 <img
-                  src={Eduardoleme2}
+                  src={EduardolemeBig}
                   alt="Foto de perfil do Eduardo leme Alves da Mota"
                   className="commission__card-img"
                 />

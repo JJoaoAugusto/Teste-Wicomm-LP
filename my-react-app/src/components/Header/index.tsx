@@ -55,12 +55,8 @@ export const Header = () => {
               <img src={BrasilICON} alt="" />
             </figure>
             <select className="header__language-select">
-              <option value="pt">
-                <p>PT</p>
-              </option>
-              <option value="en">
-                <p>EN</p>
-              </option>
+              <option value="pt">PT</option>
+              <option value="en">EN</option>
             </select>
           </fieldset>
         </div>

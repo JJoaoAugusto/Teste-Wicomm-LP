@@ -6,9 +6,7 @@ import {
   white,
   blue,
 } from "../../../../../styles/typography";
-import EventImage from "../../../../../assets/eventImages/EventImage.svg";
-import IconLeftArrowBlue from "../../../../../assets/iconImages/IconLeftArrowBlue.svg";
-import IconRightArrowBlue from "../../../../../assets/iconImages/IconRightArrowBlue.svg";
+import { ArticleCarousel } from "./ArticleCarousel";
 
 export const SpeakersEventArticle = () => {
   return (
@@ -64,27 +62,7 @@ export const SpeakersEventArticle = () => {
             </div>
           </div>
         </div>
-        <div className="speakers__event-carousel">
-          <img
-            src={IconLeftArrowBlue}
-            alt="Ícone que representa uma flecha para a esquerda"
-            className="speakers__event-carousel-arrow"
-          />
-          <figure className="speakers__event-images">
-            <img
-              src={EventImage}
-              alt="imagem do evento mostrando uma apresentação com o publico assistindo"
-            />
-            <Text size={11} weight={300}>
-              Imagens do evento realizado em 2023
-            </Text>
-          </figure>
-          <img
-            src={IconRightArrowBlue}
-            alt="Ícone que representa uma flecha para a direita"
-            className="speakers__event-carousel-arrow"
-          />
-        </div>
+        <ArticleCarousel />
       </div>
     </StyledArticle>
   );

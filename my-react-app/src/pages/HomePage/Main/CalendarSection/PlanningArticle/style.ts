@@ -150,10 +150,17 @@ export const StyledArticle = styled.article`
     width: 100%;
     padding: 16px;
 
-    background: transparent;
     border-radius: 100px;
     z-index: 0;
     cursor: pointer;
+  }
+
+  .calendar__plan-item:hover {
+    background: linear-gradient(
+      to right,
+      rgba(176, 78, 225, 0.3),
+      rgba(1, 175, 217, 0.3)
+    );
   }
 
   .calendar__plan-item-date {

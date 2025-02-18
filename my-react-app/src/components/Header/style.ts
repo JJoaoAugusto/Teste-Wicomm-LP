@@ -45,6 +45,10 @@ export const StyledHeader = styled.header`
     color: var(--white);
   }
 
+  .header__menu-link:hover {
+    font-weight: 500;
+  }
+
   .header__actions {
     display: flex;
     flex-direction: row;
@@ -68,6 +72,10 @@ export const StyledHeader = styled.header`
     font-weight: bold;
 
     cursor: pointer;
+  }
+
+  .header__button:hover {
+    background-color: var(--blue-congresso-light);
   }
 
   .header__language {

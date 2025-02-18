@@ -62,12 +62,9 @@ export const StyledSection = styled.section`
   }
 
   .commission__card-link {
-    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
 
     color: var(--white);
-    border-bottom: 1px solid var(--white);
-
-    font-weight: 300px;
-    font-size: 14px;
   }
 `;

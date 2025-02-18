@@ -96,4 +96,8 @@ export const StyledArticle = styled.article`
 
     cursor: pointer;
   }
+
+  .about__button:hover {
+    background-color: var(--blue-congresso-light);
+  }
 `;

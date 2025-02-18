@@ -49,6 +49,7 @@ export const CommissionOrganizingArticle = () => {
             </a>
           </div>
         </li>
+
         <li className="commission__card">
           <figure className="commission__card-figure">
             <img
@@ -57,7 +58,7 @@ export const CommissionOrganizingArticle = () => {
               className="commission__card-img"
             />
           </figure>
-          <div className="comission-card-content">
+          <div className="commission-card-content">
             <div className="commission__card-info">
               <Text size={16} weight={400}>
                 Aline Lorenzon
